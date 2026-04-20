@@ -168,6 +168,16 @@
       overflow-x: clip;
     }
 
+    /* ── CUSTOM SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border2);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover { background: var(--blue); }
+    * { scrollbar-width: thin; scrollbar-color: var(--border2) transparent; }
+
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
       background: var(--w);
@@ -2848,7 +2858,7 @@
     /* ── SIDE DOT NAVIGATION ── */
     .side-nav {
       position: fixed;
-      right: 22px;
+      right: 10px;
       top: 50%;
       transform: translateY(-50%);
       z-index: 400;
