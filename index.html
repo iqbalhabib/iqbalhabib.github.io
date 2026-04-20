@@ -165,15 +165,16 @@
 
     html {
       scroll-behavior: smooth;
-      overflow-x: hidden;
+      overflow-x: clip;
     }
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
       background: var(--w);
       color: var(--dark);
-      overflow-x: hidden;
+      overflow-x: clip;
       cursor: none;
+      max-width: 100vw;
     }
 
     /* ── CURSOR ── */
@@ -2877,7 +2878,7 @@
       border: 1px solid var(--border);
       box-shadow: 0 2px 12px rgba(0,0,0,.08);
       opacity: 0;
-      transform: translateX(8px);
+      transform: translateX(-6px);
       transition: opacity .22s, transform .22s;
       pointer-events: none;
     }
