@@ -2671,7 +2671,7 @@
       }
 
       #hero {
-        padding: 90px 22px 60px;
+        padding: 90px 22px 140px;
       }
 
       .hero-inner {
@@ -2713,13 +2713,18 @@
         padding: 28px 22px;
       }
 
-      .scroll-hint {
-        left: 22px;
-      }
+      /* Centered scroll hint uses default left:50% */
     }
 
     @media(max-width:600px) {
       /* Hero Mobile Polish */
+      .scroll-hint {
+        bottom: 24px;
+        transform: translateX(-50%) scale(0.85);
+      }
+      .scroll-hint-inner {
+        gap: 6px;
+      }
       .hero-badge {
         font-size: 0.65rem;
         padding: 8px 14px;
