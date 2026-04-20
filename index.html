@@ -168,15 +168,9 @@
       overflow-x: clip;
     }
 
-    /* ── CUSTOM SCROLLBAR ── */
-    ::-webkit-scrollbar { width: 4px; }
-    ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb {
-      background: var(--border2);
-      border-radius: 4px;
-    }
-    ::-webkit-scrollbar-thumb:hover { background: var(--blue); }
-    * { scrollbar-width: thin; scrollbar-color: var(--border2) transparent; }
+    /* ── HIDE SCROLLBAR (scroll still works) ── */
+    html { scrollbar-width: none; }
+    ::-webkit-scrollbar { display: none; }
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
