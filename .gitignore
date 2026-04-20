@@ -1,0 +1,17 @@
+# Old backup files — not needed on the live site
+Portfolio (1).html
+Portfolio (2).html
+Portfolio copy.html
+Portfolio copy 2.html
+Portfolio.html
+Iqbal Habib Portfolio.html
+
+# Claude memory
+.claude/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# uploads — exclude old dev file
+uploads/index (3).html
