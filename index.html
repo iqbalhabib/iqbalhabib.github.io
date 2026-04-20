@@ -4828,8 +4828,8 @@
       btn.disabled = true;
 
       const data = new FormData(form);
-      // Add Web3Forms access key — replace YOUR_ACCESS_KEY with the key from web3forms.com
-      data.append('access_key', 'YOUR_ACCESS_KEY');
+      // Web3Forms access key
+      data.append('access_key', '5fe4c7cb-c67f-4706-a17c-5af6ddbd8013');
       data.append('subject', 'Portfolio Contact: ' + (data.get('subject') || 'New Message'));
       data.append('from_name', data.get('name') || 'Portfolio Visitor');
 
