@@ -67,24 +67,24 @@
 
     /* ── DARK THEME VARIABLES ── */
     [data-theme="dark"] {
-      --w:       #111009;
-      --w2:      #1a1812;
-      --w3:      #201e17;
-      --dark:    #f0ede6;
-      --dark2:   #d0cbc2;
-      --dark3:   #857e74;
-      --blue:    #5b82ff;
-      --blue-l:  rgba(91, 130, 255, .12);
-      --blue-m:  rgba(91, 130, 255, .20);
-      --green:   #00d490;
+      --w: #111009;
+      --w2: #1a1812;
+      --w3: #201e17;
+      --dark: #f0ede6;
+      --dark2: #d0cbc2;
+      --dark3: #857e74;
+      --blue: #5b82ff;
+      --blue-l: rgba(91, 130, 255, .12);
+      --blue-m: rgba(91, 130, 255, .20);
+      --green: #00d490;
       --green-l: rgba(0, 212, 144, .10);
-      --gold:    #d4b060;
-      --gold-l:  rgba(212, 176, 96, .12);
-      --orange:  #ff8040;
-      --orange-l:rgba(255, 128, 64, .10);
-      --border:  #2d2a23;
+      --gold: #d4b060;
+      --gold-l: rgba(212, 176, 96, .12);
+      --orange: #ff8040;
+      --orange-l: rgba(255, 128, 64, .10);
+      --border: #2d2a23;
       --border2: #3d3930;
-      --shadow:  0 4px 28px rgba(0, 0, 0, .35);
+      --shadow: 0 4px 28px rgba(0, 0, 0, .35);
       --shadow2: 0 20px 70px rgba(0, 0, 0, .55);
     }
 
@@ -93,6 +93,7 @@
       background: rgba(17, 16, 9, .92);
       border-bottom-color: rgba(45, 42, 35, .8);
     }
+
     [data-theme="dark"] .hv-card,
     [data-theme="dark"] .skill-card,
     [data-theme="dark"] .proj-card,
@@ -101,67 +102,210 @@
     [data-theme="dark"] .form-wrap,
     [data-theme="dark"] .paper,
     [data-theme="dark"] .subj-card,
-    [data-theme="dark"] .tbtn.on { background: var(--w2); }
-    [data-theme="dark"] .acard:hover { background: var(--w2); }
-    [data-theme="dark"] .ac-icon { background: var(--w3); border-color: var(--border); }
+    [data-theme="dark"] .tbtn.on {
+      background: var(--w2);
+    }
+
+    [data-theme="dark"] .acard:hover {
+      background: var(--w2);
+    }
+
+    [data-theme="dark"] .ac-icon {
+      background: var(--w3);
+      border-color: var(--border);
+    }
+
     [data-theme="dark"] .fi:focus,
     [data-theme="dark"] .fta:focus,
-    [data-theme="dark"] .fsel:focus { background: var(--w2); }
-    [data-theme="dark"] .fsel option { background: var(--w2); color: var(--dark); }
-    [data-theme="dark"] .tbtn:hover:not(.on) { background: rgba(255,255,255,.05); }
-    [data-theme="dark"] .si-b,  [data-theme="dark"] .wi-b  { background: rgba(91, 130, 255, .15); }
-    [data-theme="dark"] .si-g,  [data-theme="dark"] .wi-g  { background: rgba(0, 212, 144, .12); }
-    [data-theme="dark"] .si-o,  [data-theme="dark"] .wi-o  { background: rgba(255, 128, 64, .12); }
-    [data-theme="dark"] .si-gold,[data-theme="dark"] .wi-gold { background: rgba(212, 176, 96, .12); }
+    [data-theme="dark"] .fsel:focus {
+      background: var(--w2);
+    }
+
+    [data-theme="dark"] .fsel option {
+      background: var(--w2);
+      color: var(--dark);
+    }
+
+    [data-theme="dark"] .tbtn:hover:not(.on) {
+      background: rgba(255, 255, 255, .05);
+    }
+
+    [data-theme="dark"] .si-b,
+    [data-theme="dark"] .wi-b {
+      background: rgba(91, 130, 255, .15);
+    }
+
+    [data-theme="dark"] .si-g,
+    [data-theme="dark"] .wi-g {
+      background: rgba(0, 212, 144, .12);
+    }
+
+    [data-theme="dark"] .si-o,
+    [data-theme="dark"] .wi-o {
+      background: rgba(255, 128, 64, .12);
+    }
+
+    [data-theme="dark"] .si-gold,
+    [data-theme="dark"] .wi-gold {
+      background: rgba(212, 176, 96, .12);
+    }
+
     [data-theme="dark"] .hero-text-col {
       background: rgba(17, 16, 9, .68);
       border-color: rgba(61, 57, 48, .65);
     }
-    [data-theme="dark"] .hero-marquee { background: var(--w2); }
-    [data-theme="dark"] #loader { background: #0c0b08; }
-    [data-theme="dark"] .hv-card::before { opacity: .7; }
-    [data-theme="dark"] .clink { background: var(--w2); }
-    [data-theme="dark"] .clink:hover { background: var(--w3); }
-    [data-theme="dark"] footer { background: #0a0908; color: rgba(255,255,255,.35); }
-    [data-theme="dark"] .f-logo { color: var(--dark); }
-    [data-theme="dark"] .tooltip { background: #2a2820; color: #f0ede6; border: 1px solid var(--border2); }
+
+    [data-theme="dark"] .hero-marquee {
+      background: var(--w2);
+    }
+
+    [data-theme="dark"] #loader {
+      background: #0c0b08;
+    }
+
+    [data-theme="dark"] .hv-card::before {
+      opacity: .7;
+    }
+
+    [data-theme="dark"] .clink {
+      background: var(--w2);
+    }
+
+    [data-theme="dark"] .clink:hover {
+      background: var(--w3);
+    }
+
+    [data-theme="dark"] footer {
+      background: #0a0908;
+      color: rgba(255, 255, 255, .35);
+    }
+
+    [data-theme="dark"] .f-logo {
+      color: var(--dark);
+    }
+
+    [data-theme="dark"] .tooltip {
+      background: #2a2820;
+      color: #f0ede6;
+      border: 1px solid var(--border2);
+    }
 
     /* ── LUCIDE SVG ICON SIZING ── */
-    .hv-icon svg    { width: 15px; height: 15px; stroke-width: 2; }
-    .ac-icon svg    { width: 20px; height: 20px; stroke-width: 1.8; }
-    .sc-icon svg    { width: 22px; height: 22px; stroke-width: 1.75; }
-    .wicon svg      { width: 21px; height: 21px; stroke-width: 1.8; }
-    .clink-icon svg { width: 16px; height: 16px; stroke-width: 2; }
-    .subj-icon svg  { width: 28px; height: 28px; stroke-width: 1.5; }
-    .why-icon svg   { width: 30px; height: 30px; stroke-width: 1.5; }
-    .btn-main svg, .btn-ghost svg { width: 13px; height: 13px; stroke-width: 2.2; vertical-align: -1px; margin-right: 5px; }
-    .tbtn svg       { width: 13px; height: 13px; stroke-width: 2; vertical-align: -1px; margin-right: 4px; }
-    .proj-ph svg    { width: 40px; height: 40px; stroke-width: 1.25; opacity: .7; }
-    .contact-badge svg { width: 12px; height: 12px; stroke-width: 2.2; vertical-align: -1px; margin-right: 3px; }
-    [data-theme="dark"] .clink-icon svg { color: var(--blue); }
+    .hv-icon svg {
+      width: 15px;
+      height: 15px;
+      stroke-width: 2;
+    }
+
+    .ac-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 1.8;
+    }
+
+    .sc-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke-width: 1.75;
+    }
+
+    .wicon svg {
+      width: 21px;
+      height: 21px;
+      stroke-width: 1.8;
+    }
+
+    .clink-icon svg {
+      width: 16px;
+      height: 16px;
+      stroke-width: 2;
+    }
+
+    .subj-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke-width: 1.5;
+    }
+
+    .why-icon svg {
+      width: 30px;
+      height: 30px;
+      stroke-width: 1.5;
+    }
+
+    .btn-main svg,
+    .btn-ghost svg {
+      width: 13px;
+      height: 13px;
+      stroke-width: 2.2;
+      vertical-align: -1px;
+      margin-right: 5px;
+    }
+
+    .tbtn svg {
+      width: 13px;
+      height: 13px;
+      stroke-width: 2;
+      vertical-align: -1px;
+      margin-right: 4px;
+    }
+
+    .proj-ph svg {
+      width: 40px;
+      height: 40px;
+      stroke-width: 1.25;
+      opacity: .7;
+    }
+
+    .contact-badge svg {
+      width: 12px;
+      height: 12px;
+      stroke-width: 2.2;
+      vertical-align: -1px;
+      margin-right: 3px;
+    }
+
+    [data-theme="dark"] .clink-icon svg {
+      color: var(--blue);
+    }
 
     /* ── THEME TOGGLE BUTTON ── */
     .theme-toggle {
-      width: 36px; height: 36px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       border: 1.5px solid var(--border2);
       background: var(--w3);
       cursor: pointer;
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       transition: background .25s, border-color .25s, transform .25s;
       color: var(--dark3);
       flex-shrink: 0;
       margin-left: 8px;
     }
+
     .theme-toggle:hover {
       background: var(--border);
       color: var(--dark);
       transform: rotate(22deg);
       border-color: var(--border2);
     }
-    .theme-toggle svg { width: 16px; height: 16px; stroke-width: 2; }
-    [data-theme="light"] .icon-moon { display: none; }
-    [data-theme="dark"]  .icon-sun  { display: none; }
+
+    .theme-toggle svg {
+      width: 16px;
+      height: 16px;
+      stroke-width: 2;
+    }
+
+    [data-theme="light"] .icon-moon {
+      display: none;
+    }
+
+    [data-theme="dark"] .icon-sun {
+      display: none;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -169,8 +313,13 @@
     }
 
     /* ── HIDE SCROLLBAR (scroll still works) ── */
-    html { scrollbar-width: none; }
-    ::-webkit-scrollbar { display: none; }
+    html {
+      scrollbar-width: none;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -182,10 +331,24 @@
     }
 
     /* ── CURSOR ── */
-    a, button, input, textarea, select, label,
-    .proj-card, .paper, .acard, .skill-card,
-    .subj-card, .why-card, .wcard, .tbtn,
-    .scroll-hint, .hv-card, .theme-toggle, .hamburger {
+    a,
+    button,
+    input,
+    textarea,
+    select,
+    label,
+    .proj-card,
+    .paper,
+    .acard,
+    .skill-card,
+    .subj-card,
+    .why-card,
+    .wcard,
+    .tbtn,
+    .scroll-hint,
+    .hv-card,
+    .theme-toggle,
+    .hamburger {
       cursor: none !important;
     }
 
@@ -197,12 +360,13 @@
       background: var(--blue);
       pointer-events: none;
       z-index: 9999;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       will-change: transform;
-      transition: width .22s cubic-bezier(.22,1,.36,1),
-                  height .22s cubic-bezier(.22,1,.36,1),
-                  background .22s,
-                  opacity .22s;
+      transition: width .22s cubic-bezier(.22, 1, .36, 1),
+        height .22s cubic-bezier(.22, 1, .36, 1),
+        background .22s,
+        opacity .22s;
     }
 
     #cur2 {
@@ -214,12 +378,13 @@
       background: transparent;
       pointer-events: none;
       z-index: 9998;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       will-change: transform;
-      transition: width .3s cubic-bezier(.22,1,.36,1),
-                  height .3s cubic-bezier(.22,1,.36,1),
-                  border-color .3s,
-                  background .3s;
+      transition: width .3s cubic-bezier(.22, 1, .36, 1),
+        height .3s cubic-bezier(.22, 1, .36, 1),
+        border-color .3s,
+        background .3s;
     }
 
     /* Hover interactive elements: dot hides, ring expands + fills */
@@ -228,6 +393,7 @@
       width: 4px;
       height: 4px;
     }
+
     body.hovering #cur2 {
       width: 44px;
       height: 44px;
@@ -242,6 +408,7 @@
       background: var(--blue);
       opacity: 1;
     }
+
     body.clicking #cur2 {
       width: 20px;
       height: 20px;
@@ -249,9 +416,18 @@
     }
 
     /* Dark mode ring adjustment */
-    [data-theme="dark"] #cur  { background: #7da4ff; }
-    [data-theme="dark"] #cur2 { border-color: rgba(125,164,255,.4); }
-    [data-theme="dark"] body.hovering #cur2 { border-color: #7da4ff; background: rgba(125,164,255,.09); }
+    [data-theme="dark"] #cur {
+      background: #7da4ff;
+    }
+
+    [data-theme="dark"] #cur2 {
+      border-color: rgba(125, 164, 255, .4);
+    }
+
+    [data-theme="dark"] body.hovering #cur2 {
+      border-color: #7da4ff;
+      background: rgba(125, 164, 255, .09);
+    }
 
     /* ── LOADER ── */
     #loader {
@@ -273,7 +449,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(26,94,255,.018) 3px, rgba(26,94,255,.018) 4px);
+      background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(26, 94, 255, .018) 3px, rgba(26, 94, 255, .018) 4px);
       pointer-events: none;
       z-index: 1;
     }
@@ -288,7 +464,10 @@
     }
 
     /* Focused content stack — above canvas (0), scanline (1), sparks (1), backdrop (2) */
-    .ld-name, .ld-tagline, .ld-bar-wrap, .ld-pct {
+    .ld-name,
+    .ld-tagline,
+    .ld-bar-wrap,
+    .ld-pct {
       position: relative;
       z-index: 3;
       text-align: center;
@@ -303,7 +482,7 @@
       transform: translate(-50%, -50%);
       width: 560px;
       height: 320px;
-      background: radial-gradient(ellipse at center, rgba(10,9,8,.92) 0%, rgba(10,9,8,.62) 52%, transparent 100%);
+      background: radial-gradient(ellipse at center, rgba(10, 9, 8, .92) 0%, rgba(10, 9, 8, .62) 52%, transparent 100%);
       z-index: 2;
       pointer-events: none;
     }
@@ -321,7 +500,7 @@
       letter-spacing: -.04em;
       overflow: hidden;
       line-height: 1;
-      text-shadow: 0 0 40px rgba(26,94,255,.55), 0 0 80px rgba(26,94,255,.2);
+      text-shadow: 0 0 40px rgba(26, 94, 255, .55), 0 0 80px rgba(26, 94, 255, .2);
     }
 
     .ld-name span {
@@ -340,7 +519,7 @@
     .ld-tagline {
       font-family: 'JetBrains Mono', monospace;
       font-size: .65rem;
-      color: rgba(255,255,255,.3);
+      color: rgba(255, 255, 255, .3);
       letter-spacing: .22em;
       text-transform: uppercase;
       opacity: 0;
@@ -353,7 +532,7 @@
       background: rgba(255, 255, 255, .08);
       border-radius: 2px;
       overflow: hidden;
-      box-shadow: 0 0 12px rgba(26,94,255,.2);
+      box-shadow: 0 0 12px rgba(26, 94, 255, .2);
     }
 
     .ld-bar {
@@ -382,18 +561,35 @@
     }
 
     @keyframes ldSparkFloat {
-      0%   { transform: translateY(100vh) scale(0); opacity: 0; }
-      5%   { opacity: 1; }
-      90%  { opacity: .6; }
-      100% { transform: translateY(-20vh) scale(1.2); opacity: 0; }
+      0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: .6;
+      }
+
+      100% {
+        transform: translateY(-20vh) scale(1.2);
+        opacity: 0;
+      }
     }
 
     @keyframes ldUp {
-      to { transform: translateY(0); }
+      to {
+        transform: translateY(0);
+      }
     }
 
     @keyframes ldBar {
-      to { width: 100%; }
+      to {
+        width: 100%;
+      }
     }
 
     @keyframes fadeUp {
@@ -690,7 +886,7 @@
       align-items: center;
       gap: 1px;
       background: var(--blue-l);
-      border: 1px solid rgba(26,94,255,.18);
+      border: 1px solid rgba(26, 94, 255, .18);
       border-radius: 7px;
       padding: 3px 12px;
       font-weight: 600;
@@ -874,8 +1070,15 @@
     }
 
     @keyframes heroVisualIn {
-      from { opacity: 0; transform: translateX(-60px) scale(0.94); }
-      to   { opacity: 1; transform: translateX(0)    scale(1);    }
+      from {
+        opacity: 0;
+        transform: translateX(-60px) scale(0.94);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+      }
     }
 
     .hv-wrap {
@@ -896,8 +1099,15 @@
     }
 
     @keyframes hvCardIn {
-      from { opacity: 0; transform: translateY(28px) scale(0.97); }
-      to   { opacity: 1; transform: translateY(0)    scale(1);    }
+      from {
+        opacity: 0;
+        transform: translateY(28px) scale(0.97);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
     }
 
     .hv-card::before {
@@ -937,8 +1147,17 @@
     }
 
     @keyframes hvPhotoIn {
-      from { opacity: 0; transform: scale(0.84); filter: blur(6px); }
-      to   { opacity: 1; transform: scale(1);    filter: blur(0);   }
+      from {
+        opacity: 0;
+        transform: scale(0.84);
+        filter: blur(6px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+      }
     }
 
     .hv-card:hover .hv-photo {
@@ -997,14 +1216,32 @@
       animation-play-state: paused;
     }
 
-    .hv-card .hv-row:nth-child(6) { animation-delay: 0.32s; }
-    .hv-card .hv-row:nth-child(7) { animation-delay: 0.42s; }
-    .hv-card .hv-row:nth-child(8) { animation-delay: 0.52s; }
-    .hv-card .hv-row:nth-child(9) { animation-delay: 0.62s; }
+    .hv-card .hv-row:nth-child(6) {
+      animation-delay: 0.32s;
+    }
+
+    .hv-card .hv-row:nth-child(7) {
+      animation-delay: 0.42s;
+    }
+
+    .hv-card .hv-row:nth-child(8) {
+      animation-delay: 0.52s;
+    }
+
+    .hv-card .hv-row:nth-child(9) {
+      animation-delay: 0.62s;
+    }
 
     @keyframes hvRowIn {
-      from { opacity: 0; transform: translateX(-20px); }
-      to   { opacity: 1; transform: translateX(0); }
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
 
     .hv-row:hover {
@@ -1109,6 +1346,7 @@
       z-index: 1;
       cursor: pointer;
     }
+
     .scroll-hint-inner {
       display: flex;
       flex-direction: column;
@@ -1116,9 +1354,17 @@
       gap: 10px;
       animation: scrollFloat 2.4s 2.7s ease-in-out infinite;
     }
+
     @keyframes scrollFloat {
-      0%, 100% { transform: translateY(0px); }
-      50%       { transform: translateY(9px); }
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(9px);
+      }
     }
 
     .scroll-txt {
@@ -1144,6 +1390,7 @@
     .scroll-hint:hover .scroll-mouse {
       border-color: var(--blue);
     }
+
     .scroll-hint:hover .scroll-hint-inner {
       animation-play-state: paused;
     }
@@ -1153,14 +1400,28 @@
       height: 7px;
       background: var(--blue);
       border-radius: 2px;
-      animation: wheelDrop 1.8s cubic-bezier(.36,0,.66,-.56) infinite;
+      animation: wheelDrop 1.8s cubic-bezier(.36, 0, .66, -.56) infinite;
     }
 
     @keyframes wheelDrop {
-      0%   { transform: translateY(0);    opacity: 1; }
-      60%  { transform: translateY(13px); opacity: 0.2; }
-      61%  { transform: translateY(0);    opacity: 0; }
-      100% { opacity: 1; }
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      60% {
+        transform: translateY(13px);
+        opacity: 0.2;
+      }
+
+      61% {
+        transform: translateY(0);
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
 
     /* ── HERO MARQUEE STRIP ── */
@@ -1185,7 +1446,9 @@
       animation: hmScroll 32s linear infinite;
     }
 
-    .hm-track:hover { animation-play-state: paused; }
+    .hm-track:hover {
+      animation-play-state: paused;
+    }
 
     /* All tags share one clean style — color comes only from the icon */
     .hm-tag {
@@ -1204,25 +1467,66 @@
       border: 1px solid var(--border);
       transition: border-color .2s, color .2s;
     }
-    .hm-tag:hover { border-color: var(--border2); color: var(--dark); }
-    .hm-tag svg { width: 12px; height: 12px; stroke-width: 2.2; flex-shrink: 0; }
+
+    .hm-tag:hover {
+      border-color: var(--border2);
+      color: var(--dark);
+    }
+
+    .hm-tag svg {
+      width: 12px;
+      height: 12px;
+      stroke-width: 2.2;
+      flex-shrink: 0;
+    }
 
     /* Icon accent colors — only the icon, not the whole pill */
-    .hm-tag.t-blue   svg { color: var(--blue); }
-    .hm-tag.t-green  svg { color: var(--green); }
-    .hm-tag.t-orange svg { color: var(--orange); }
-    .hm-tag.t-gold   svg { color: var(--gold); }
-    .hm-tag.t-purple svg { color: #6c47ff; }
+    .hm-tag.t-blue svg {
+      color: var(--blue);
+    }
+
+    .hm-tag.t-green svg {
+      color: var(--green);
+    }
+
+    .hm-tag.t-orange svg {
+      color: var(--orange);
+    }
+
+    .hm-tag.t-gold svg {
+      color: var(--gold);
+    }
+
+    .hm-tag.t-purple svg {
+      color: #6c47ff;
+    }
 
     /* Dark mode refinement */
-    [data-theme="dark"] .hm-tag { background: var(--w3); border-color: var(--border); color: var(--dark3); }
-    [data-theme="dark"] .hm-tag:hover { color: var(--dark); border-color: var(--border2); }
+    [data-theme="dark"] .hm-tag {
+      background: var(--w3);
+      border-color: var(--border);
+      color: var(--dark3);
+    }
 
-    .hm-sep { color: var(--border); font-size: .7rem; user-select: none; }
+    [data-theme="dark"] .hm-tag:hover {
+      color: var(--dark);
+      border-color: var(--border2);
+    }
+
+    .hm-sep {
+      color: var(--border);
+      font-size: .7rem;
+      user-select: none;
+    }
 
     @keyframes hmScroll {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
     }
 
     /* ── HERO RIGHT GLASS PANEL ── */
@@ -1242,9 +1546,20 @@
 
     /* ── STAT COUNT-UP POP ── */
     @keyframes statPop {
-      0%   { transform: scale(0.7) translateY(10px); opacity: 0; }
-      60%  { transform: scale(1.08) translateY(-2px); opacity: 1; }
-      100% { transform: scale(1)   translateY(0);    opacity: 1; }
+      0% {
+        transform: scale(0.7) translateY(10px);
+        opacity: 0;
+      }
+
+      60% {
+        transform: scale(1.08) translateY(-2px);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
     }
 
     .hstat-num {
@@ -1271,11 +1586,25 @@
       transform: translateY(0);
     }
 
-    .rv.d1 { transition-delay: .08s; }
-    .rv.d2 { transition-delay: .16s; }
-    .rv.d3 { transition-delay: .24s; }
-    .rv.d4 { transition-delay: .32s; }
-    .rv.d5 { transition-delay: .40s; }
+    .rv.d1 {
+      transition-delay: .08s;
+    }
+
+    .rv.d2 {
+      transition-delay: .16s;
+    }
+
+    .rv.d3 {
+      transition-delay: .24s;
+    }
+
+    .rv.d4 {
+      transition-delay: .32s;
+    }
+
+    .rv.d5 {
+      transition-delay: .40s;
+    }
 
     .rv-l {
       opacity: 0;
@@ -1504,20 +1833,41 @@
 
     /* ── TIMELINE ANIMATION ── */
     @keyframes tlSlideIn {
-      from { opacity: 0; transform: translateX(-22px); }
-      to   { opacity: 1; transform: translateX(0); }
+      from {
+        opacity: 0;
+        transform: translateX(-22px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
+
     @keyframes tlDotPop {
-      from { transform: scale(0); }
-      60%  { transform: scale(1.3); }
-      to   { transform: scale(1); }
+      from {
+        transform: scale(0);
+      }
+
+      60% {
+        transform: scale(1.3);
+      }
+
+      to {
+        transform: scale(1);
+      }
     }
-    .tl-item { opacity: 0; }
+
+    .tl-item {
+      opacity: 0;
+    }
+
     .tl-item.tl-in {
-      animation: tlSlideIn .55s cubic-bezier(.22,1,.36,1) both;
+      animation: tlSlideIn .55s cubic-bezier(.22, 1, .36, 1) both;
     }
+
     .tl-item.tl-in::before {
-      animation: tlDotPop .45s cubic-bezier(.22,1,.36,1) var(--tl-dot-delay, 0.1s) both;
+      animation: tlDotPop .45s cubic-bezier(.22, 1, .36, 1) var(--tl-dot-delay, 0.1s) both;
     }
 
     /* ── SKILLS ── */
@@ -1579,10 +1929,22 @@
       font-size: 0;
       transition: transform .3s;
     }
-    .si-b svg { color: var(--blue); }
-    .si-g svg { color: var(--green); }
-    .si-o svg { color: var(--orange); }
-    .si-gold svg { color: var(--gold); }
+
+    .si-b svg {
+      color: var(--blue);
+    }
+
+    .si-g svg {
+      color: var(--green);
+    }
+
+    .si-o svg {
+      color: var(--orange);
+    }
+
+    .si-gold svg {
+      color: var(--gold);
+    }
 
     .skill-card:hover .sc-icon {
       transform: scale(1.18) rotate(-8deg);
@@ -1766,12 +2128,14 @@
       gap: 10px;
       margin: 28px 0 14px;
     }
+
     .p-category::after {
       content: '';
       flex: 1;
       height: 1px;
       background: var(--border);
     }
+
     .p-cat-label {
       display: inline-flex;
       align-items: center;
@@ -1783,14 +2147,30 @@
       text-transform: uppercase;
       color: var(--blue);
       background: var(--blue-l);
-      border: 1px solid rgba(26,94,255,.18);
+      border: 1px solid rgba(26, 94, 255, .18);
       padding: 4px 12px;
       border-radius: 20px;
       white-space: nowrap;
     }
-    .p-cat-label svg { width: 11px; height: 11px; stroke-width: 2.2; }
-    .p-cat-review { color: var(--orange); background: var(--orange-l); border-color: rgba(255,107,43,.2); }
-    .p-cat-journal { color: var(--green); background: var(--green-l); border-color: rgba(0,184,122,.2); }
+
+    .p-cat-label svg {
+      width: 11px;
+      height: 11px;
+      stroke-width: 2.2;
+    }
+
+    .p-cat-review {
+      color: var(--orange);
+      background: var(--orange-l);
+      border-color: rgba(255, 107, 43, .2);
+    }
+
+    .p-cat-journal {
+      color: var(--green);
+      background: var(--green-l);
+      border-color: rgba(0, 184, 122, .2);
+    }
+
     .p-award {
       display: inline-flex;
       align-items: center;
@@ -1800,15 +2180,35 @@
       font-weight: 700;
       color: var(--gold);
       background: var(--gold-l);
-      border: 1px solid rgba(201,168,76,.28);
+      border: 1px solid rgba(201, 168, 76, .28);
       padding: 3px 10px;
       border-radius: 20px;
     }
-    .p-award svg { width: 11px; height: 11px; stroke-width: 2; }
-    .p-venue-journal { color: var(--green); background: var(--green-l); }
-    .p-venue-review  { color: var(--orange); background: var(--orange-l); }
-    .paper-review { opacity: .88; }
-    .paper-review .p-num { color: var(--border2); }
+
+    .p-award svg {
+      width: 11px;
+      height: 11px;
+      stroke-width: 2;
+    }
+
+    .p-venue-journal {
+      color: var(--green);
+      background: var(--green-l);
+    }
+
+    .p-venue-review {
+      color: var(--orange);
+      background: var(--orange-l);
+    }
+
+    .paper-review {
+      opacity: .88;
+    }
+
+    .paper-review .p-num {
+      color: var(--border2);
+    }
+
     .p-doi {
       font-family: 'JetBrains Mono', monospace;
       font-size: .62rem;
@@ -2083,10 +2483,22 @@
       font-size: 0;
       transition: transform .3s;
     }
-    .wi-b svg { color: var(--blue); }
-    .wi-g svg { color: var(--green); }
-    .wi-o svg { color: var(--orange); }
-    .wi-gold svg { color: var(--gold); }
+
+    .wi-b svg {
+      color: var(--blue);
+    }
+
+    .wi-g svg {
+      color: var(--green);
+    }
+
+    .wi-o svg {
+      color: var(--orange);
+    }
+
+    .wi-gold svg {
+      color: var(--gold);
+    }
 
     .wcard:hover .wicon {
       transform: scale(1.15) rotate(-6deg);
@@ -2717,14 +3129,17 @@
     }
 
     @media(max-width:600px) {
+
       /* Hero Mobile Polish */
       .scroll-hint {
         bottom: 24px;
         transform: translateX(-50%) scale(0.85);
       }
+
       .scroll-hint-inner {
         gap: 6px;
       }
+
       .hero-badge {
         font-size: 0.65rem;
         padding: 8px 14px;
@@ -2733,38 +3148,48 @@
         line-height: 1.5;
         align-items: flex-start;
       }
+
       .badge-pulse {
         flex-shrink: 0;
         margin-top: 4px;
       }
+
       .hero-role {
         flex-wrap: wrap;
         height: auto;
         line-height: 1.6;
       }
+
       .hero-stats {
         gap: 0;
         justify-content: space-between;
         width: 100%;
       }
+
       .hstat {
         text-align: center;
       }
+
       .hstat::after {
         display: none;
       }
+
       .hero-text-col {
         padding: 24px 20px;
       }
+
       .hero-name {
         font-size: clamp(2.4rem, 10vw, 3.2rem);
       }
+
       .hv-card {
         padding: 16px;
       }
+
       .hv-row {
         align-items: flex-start;
       }
+
       .hv-icon {
         margin-top: 2px;
       }
@@ -2793,35 +3218,56 @@
       margin-left: 8px;
       flex-shrink: 0;
     }
-    .hamburger:hover { background: var(--border); }
+
+    .hamburger:hover {
+      background: var(--border);
+    }
+
     .hamburger span {
       display: block;
       width: 18px;
       height: 2px;
       background: var(--dark);
       border-radius: 2px;
-      transition: all .35s cubic-bezier(.16,1,.3,1);
+      transition: all .35s cubic-bezier(.16, 1, .3, 1);
     }
-    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
-    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
-    @media(max-width:960px) { .hamburger { display: flex; } }
+
+    .hamburger.open span:nth-child(1) {
+      transform: rotate(45deg) translate(4.5px, 4.5px);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(4.5px, -4.5px);
+    }
+
+    @media(max-width:960px) {
+      .hamburger {
+        display: flex;
+      }
+    }
 
     /* ── MOBILE NAV OVERLAY ── */
     .mobile-nav {
       position: fixed;
       inset: 0;
       z-index: 490;
-      background: rgba(0,0,0,0);
+      background: rgba(0, 0, 0, 0);
       pointer-events: none;
       transition: background .35s;
     }
+
     .mobile-nav.open {
-      background: rgba(0,0,0,.55);
+      background: rgba(0, 0, 0, .55);
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
       pointer-events: auto;
     }
+
     .mobile-nav-panel {
       position: absolute;
       top: 0;
@@ -2830,15 +3276,19 @@
       height: 100%;
       background: var(--w2);
       border-left: 1px solid var(--border);
-      box-shadow: -20px 0 60px rgba(0,0,0,.15);
+      box-shadow: -20px 0 60px rgba(0, 0, 0, .15);
       transform: translateX(100%);
-      transition: transform .42s cubic-bezier(.16,1,.3,1);
+      transition: transform .42s cubic-bezier(.16, 1, .3, 1);
       display: flex;
       flex-direction: column;
       padding: 80px 28px 40px;
       overflow-y: auto;
     }
-    .mobile-nav.open .mobile-nav-panel { transform: translateX(0); }
+
+    .mobile-nav.open .mobile-nav-panel {
+      transform: translateX(0);
+    }
+
     .mobile-nav-panel a {
       font-size: 1.05rem;
       font-weight: 600;
@@ -2848,7 +3298,12 @@
       border-bottom: 1px solid var(--border);
       transition: color .2s, padding-left .25s;
     }
-    .mobile-nav-panel a:hover { color: var(--blue); padding-left: 8px; }
+
+    .mobile-nav-panel a:hover {
+      color: var(--blue);
+      padding-left: 8px;
+    }
+
     .mobile-nav-hire-m {
       margin-top: 22px !important;
       padding: 14px 24px !important;
@@ -2857,19 +3312,28 @@
       border-bottom: none !important;
       border-radius: 11px !important;
       text-align: center;
-      box-shadow: 0 4px 18px rgba(26,94,255,.28);
+      box-shadow: 0 4px 18px rgba(26, 94, 255, .28);
       font-weight: 700 !important;
     }
-    .mobile-nav-hire-m:hover { padding-left: 24px !important; opacity: .9; }
-    [data-theme="dark"] .mobile-nav-panel { background: var(--w2); }
+
+    .mobile-nav-hire-m:hover {
+      padding-left: 24px !important;
+      opacity: .9;
+    }
+
+    [data-theme="dark"] .mobile-nav-panel {
+      background: var(--w2);
+    }
 
     /* ── SKILL CARD RADIAL GLOW ── */
     .skill-card::after {
-      background: radial-gradient(circle at var(--mx,50%) var(--my,50%), var(--blue-l) 0%, transparent 65%) !important;
+      background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), var(--blue-l) 0%, transparent 65%) !important;
     }
 
     /* ── PAPER CATEGORY FIRST CHILD MARGIN ── */
-    .papers .p-category:first-child { margin-top: 0; }
+    .papers .p-category:first-child {
+      margin-top: 0;
+    }
 
     /* ── IMPROVED SECTION NUMBERS ── */
     .eyebrow .sec-num {
@@ -2880,23 +3344,45 @@
     }
 
     /* ── SMOOTH PAGE APPEARANCE ── */
-    body { animation: bodyFadeIn .4s ease both; }
-    @keyframes bodyFadeIn { from { opacity: 0; } to { opacity: 1; } }
+    body {
+      animation: bodyFadeIn .4s ease both;
+    }
+
+    @keyframes bodyFadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
 
     /* ── GOLD EYEBROW NUM ── */
-    .eyebrow.gold-eye .sec-num { color: var(--gold-l); }
+    .eyebrow.gold-eye .sec-num {
+      color: var(--gold-l);
+    }
 
     /* ── CONTACT BADGE DARK FIX ── */
-    [data-theme="dark"] .contact-badge-pill { background: var(--w3) !important; }
+    [data-theme="dark"] .contact-badge-pill {
+      background: var(--w3) !important;
+    }
 
     /* ── BETTER WCARD DARK ── */
-    [data-theme="dark"] .wcard { background: var(--w2); }
+    [data-theme="dark"] .wcard {
+      background: var(--w2);
+    }
 
     /* ── ACTIVE WORK DARK FIX ── */
-    [data-theme="dark"] #active { background: var(--w); }
+    [data-theme="dark"] #active {
+      background: var(--w);
+    }
 
     /* ── GLOBAL SMOOTH HOVER ── */
-    a, button { transition: all .25s cubic-bezier(.16,1,.3,1); }
+    a,
+    button {
+      transition: all .25s cubic-bezier(.16, 1, .3, 1);
+    }
 
     /* ── SIDE DOT NAVIGATION ── */
     .side-nav {
@@ -2910,6 +3396,7 @@
       gap: 12px;
       align-items: flex-end;
     }
+
     .side-dot {
       display: flex;
       align-items: center;
@@ -2917,6 +3404,7 @@
       cursor: pointer;
       position: relative;
     }
+
     .side-dot-label {
       font-family: 'JetBrains Mono', monospace;
       font-size: .58rem;
@@ -2929,12 +3417,13 @@
       padding: 3px 9px;
       border-radius: 6px;
       border: 1px solid var(--border);
-      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
       opacity: 0;
       transform: translateX(-6px);
       transition: opacity .22s, transform .22s;
       pointer-events: none;
     }
+
     .side-dot-pip {
       width: 6px;
       height: 6px;
@@ -2942,32 +3431,44 @@
       background: var(--border2);
       border: 1.5px solid transparent;
       flex-shrink: 0;
-      transition: all .3s cubic-bezier(.22,1,.36,1);
+      transition: all .3s cubic-bezier(.22, 1, .36, 1);
     }
+
     .side-dot:hover .side-dot-label,
     .side-dot.active .side-dot-label {
       opacity: 1;
       transform: translateX(0);
     }
+
     .side-dot:hover .side-dot-pip {
       background: var(--blue);
       transform: scale(1.4);
     }
+
     .side-dot.active .side-dot-pip {
       background: var(--blue);
       width: 8px;
       height: 8px;
-      border-color: rgba(26,94,255,.3);
-      box-shadow: 0 0 0 3px rgba(26,94,255,.15);
+      border-color: rgba(26, 94, 255, .3);
+      box-shadow: 0 0 0 3px rgba(26, 94, 255, .15);
       transform: scale(1);
     }
+
     .side-dot.active .side-dot-label {
       color: var(--blue);
       background: var(--blue-l);
-      border-color: rgba(26,94,255,.2);
+      border-color: rgba(26, 94, 255, .2);
     }
-    [data-theme="dark"] .side-dot-label { background: var(--w3); }
-    @media(max-width: 1100px) { .side-nav { display: none; } }
+
+    [data-theme="dark"] .side-dot-label {
+      background: var(--w3);
+    }
+
+    @media(max-width: 1100px) {
+      .side-nav {
+        display: none;
+      }
+    }
 
     /* ── IMPROVED NAV ACTIVE ── */
     .nav-links a.on {
@@ -2992,26 +3493,40 @@
       z-index: 600;
       opacity: 0;
       pointer-events: none;
-      transition: opacity .3s, transform .3s cubic-bezier(.22,1,.36,1);
+      transition: opacity .3s, transform .3s cubic-bezier(.22, 1, .36, 1);
       white-space: nowrap;
     }
+
     #sec-toast.show {
       opacity: 1;
       transform: translateX(-50%) translateY(0);
     }
-    [data-theme="dark"] #sec-toast { background: var(--w3); color: var(--dark); border: 1px solid var(--border2); }
+
+    [data-theme="dark"] #sec-toast {
+      background: var(--w3);
+      color: var(--dark);
+      border: 1px solid var(--border2);
+    }
 
     /* ── FORM SUCCESS ICON ── */
     .fs-check {
-      width: 52px; height: 52px;
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
       background: var(--green-l);
-      border: 2px solid rgba(0,184,122,.25);
-      display: flex; align-items: center; justify-content: center;
+      border: 2px solid rgba(0, 184, 122, .25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin: 0 auto 1rem;
       color: var(--green);
     }
-    .fs-check svg { width: 26px; height: 26px; stroke-width: 2; }
+
+    .fs-check svg {
+      width: 26px;
+      height: 26px;
+      stroke-width: 2;
+    }
   </style>
 </head>
 
@@ -3127,32 +3642,67 @@
         </div>
         <h1 class="hero-name">
           <div class="word">
-            <span class="char d1">I</span><span class="char d2">q</span><span class="char d3">b</span><span class="char d4">a</span><span class="char d5">l</span>
+            <span class="char d1">I</span><span class="char d2">q</span><span class="char d3">b</span><span
+              class="char d4">a</span><span class="char d5">l</span>
           </div>
           &nbsp;
           <div class="word italic-word">
-            <span class="char d6">H</span><span class="char d7">a</span><span class="char d8">b</span><span class="char d9">i</span><span class="char d10">b</span>
+            <span class="char d6">H</span><span class="char d7">a</span><span class="char d8">b</span><span
+              class="char d9">i</span><span class="char d10">b</span>
           </div>
         </h1>
         <style>
-          .char.d1 { animation-delay: .28s; }
-          .char.d2 { animation-delay: .32s; }
-          .char.d3 { animation-delay: .36s; }
-          .char.d4 { animation-delay: .40s; }
-          .char.d5 { animation-delay: .44s; }
-          .char.d6 { animation-delay: .50s; }
-          .char.d7 { animation-delay: .54s; }
-          .char.d8 { animation-delay: .58s; }
-          .char.d9 { animation-delay: .62s; }
-          .char.d10 { animation-delay: .66s; padding-right: 18px; }
+          .char.d1 {
+            animation-delay: .28s;
+          }
+
+          .char.d2 {
+            animation-delay: .32s;
+          }
+
+          .char.d3 {
+            animation-delay: .36s;
+          }
+
+          .char.d4 {
+            animation-delay: .40s;
+          }
+
+          .char.d5 {
+            animation-delay: .44s;
+          }
+
+          .char.d6 {
+            animation-delay: .50s;
+          }
+
+          .char.d7 {
+            animation-delay: .54s;
+          }
+
+          .char.d8 {
+            animation-delay: .58s;
+          }
+
+          .char.d9 {
+            animation-delay: .62s;
+          }
+
+          .char.d10 {
+            animation-delay: .66s;
+            padding-right: 18px;
+          }
         </style>
-        <p class="hero-role"><span class="hero-role-label">Data Scientist</span> <span class="hero-role-sep">·</span> <span class="hero-typed-pill"><span id="typedText"></span><span class="typed-cursor"></span></span></p>
+        <p class="hero-role"><span class="hero-role-label">Data Scientist</span> <span class="hero-role-sep">·</span>
+          <span class="hero-typed-pill"><span id="typedText"></span><span class="typed-cursor"></span></span></p>
         <p class="hero-bio">Building <strong>AI/ML systems &amp; data-driven solutions</strong> · IEEE-published
           Healthcare AI researcher · MSc Statistics &amp; Data Science (3.92/4.00) · 5+ years O/A Level educator · PhD
           aspirant in AI &amp; Machine Learning.</p>
         <div class="hero-ctas">
-          <a href="uploads/CV_Iqbal_Habib.pdf" download="CV_Iqbal_Habib.pdf" class="btn-main" data-tip="Download my full CV / Resume"><span><i data-lucide="download"></i> Download CV</span></a>
-          <a href="#contact" class="btn-ghost" data-tip="Send me a message"><span><i data-lucide="mail"></i> Get In Touch</span></a>
+          <a href="uploads/CV_Iqbal_Habib.pdf" download="CV_Iqbal_Habib.pdf" class="btn-main"
+            data-tip="Download my full CV / Resume"><span><i data-lucide="download"></i> Download CV</span></a>
+          <a href="#contact" class="btn-ghost" data-tip="Send me a message"><span><i data-lucide="mail"></i> Get In
+              Touch</span></a>
         </div>
         <div class="hero-stats">
           <div class="hstat">
@@ -3173,7 +3723,9 @@
     <div class="scroll-hint" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
       <div class="scroll-hint-inner">
         <span class="scroll-txt">Scroll to explore</span>
-        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -3222,7 +3774,9 @@
             3.97/4.00). My research sits at the crossroads of machine learning, healthcare AI, and statistical
             modelling.</p>
           <p>Currently serving as <strong>Senior Research Associate</strong> at Data Insightopia and <strong>Research
-              Assistant</strong> at Pabna University of Science and Technology, I have published <em>7 peer-reviewed works</em> — three IEEE conference papers, two international journal articles, and two papers under review — spanning Healthcare AI, deep learning, and statistical modelling.</p>
+              Assistant</strong> at Pabna University of Science and Technology, I have published <em>7 peer-reviewed
+              works</em> — three IEEE conference papers, two international journal articles, and two papers under review
+            — spanning Healthcare AI, deep learning, and statistical modelling.</p>
           <p>Alongside research, I have spent over <strong>5 years</strong> guiding O and A Level students through
             Mathematics and Statistics — with a track record of transforming struggling students into confident
             problem-solvers.</p>
@@ -3256,7 +3810,7 @@
               <div class="tl-item">
                 <div class="tl-year">2013 – 2017</div>
                 <div class="tl-title">BSc Mathematics</div>
-                <div class="tl-org">Govt. Edward College, Pabna · Bangladesh</div>
+                <div class="tl-org">National University, Bangladesh</div>
               </div>
             </div>
           </div>
@@ -3273,7 +3827,8 @@
             <div class="ac-icon"><i data-lucide="file-text"></i></div>
             <div class="ac-body">
               <h4>7 Peer-Reviewed Publications</h4>
-              <p>3 IEEE conference papers (incl. Best Paper Award), 2 international journal articles, and 2 papers under review — Healthcare AI &amp; Statistics.</p>
+              <p>3 IEEE conference papers (incl. Best Paper Award), 2 international journal articles, and 2 papers under
+                review — Healthcare AI &amp; Statistics.</p>
             </div>
           </div>
           <div class="acard">
@@ -3380,7 +3935,8 @@
     <div class="wrap">
       <div class="eyebrow rv"><span class="sec-num">03 /</span> Academic Work</div>
       <h2 class="sec-title rv d1">Research &amp;<br />Publications</h2>
-      <p class="sec-sub rv d2">7 peer-reviewed publications — IEEE conferences, international journals, and ongoing work at the intersection of deep learning, healthcare AI, and statistics.</p>
+      <p class="sec-sub rv d2">7 peer-reviewed publications — IEEE conferences, international journals, and ongoing work
+        at the intersection of deep learning, healthcare AI, and statistics.</p>
 
       <div class="papers">
 
@@ -3395,10 +3951,14 @@
             <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:9px;">
               <div class="p-venue">IEEE STI 2024 · Narayanganj, Bangladesh</div>
             </div>
-            <div class="p-title">A Novel Hybrid Xception-DenseNet121 Model for Acute Lymphoblastic Leukemia Classification</div>
+            <div class="p-title">A Novel Hybrid Xception-DenseNet121 Model for Acute Lymphoblastic Leukemia
+              Classification</div>
             <div class="p-authors">M. M. H. Munna, <strong>I. Habib</strong> and N. Aman</div>
-            <div class="p-abstract">6th International Conference on Sustainable Technologies for Industry 5.0 (STI), 2024, pp. 1–6.</div>
-            <div class="p-tags"><span class="p-tag">Leukemia</span><span class="p-tag">Xception</span><span class="p-tag">DenseNet121</span><span class="p-tag">Medical Imaging</span><span class="p-tag">Hybrid DL</span></div>
+            <div class="p-abstract">6th International Conference on Sustainable Technologies for Industry 5.0 (STI),
+              2024, pp. 1–6.</div>
+            <div class="p-tags"><span class="p-tag">Leukemia</span><span class="p-tag">Xception</span><span
+                class="p-tag">DenseNet121</span><span class="p-tag">Medical Imaging</span><span class="p-tag">Hybrid
+                DL</span></div>
             <div class="p-doi">doi: 10.1109/STI64222.2024.10951150</div>
           </div>
         </a>
@@ -3409,8 +3969,10 @@
             <div class="p-venue" style="margin-bottom:9px;">IEEE ICRPSET 2024 · Rajshahi, Bangladesh</div>
             <div class="p-title">Leveraging Hybrid Deep Learning for Effective Multiclass Blood Cancer Detection</div>
             <div class="p-authors"><strong>I. Habib</strong>, M. M. H. Munna and N. Aman</div>
-            <div class="p-abstract">2024 International Conference on Recent Progresses in Science, Engineering and Technology (ICRPSET), 2024, pp. 1–5.</div>
-            <div class="p-tags"><span class="p-tag">Blood Cancer</span><span class="p-tag">Hybrid DL</span><span class="p-tag">Multiclass Detection</span><span class="p-tag">Medical Imaging</span></div>
+            <div class="p-abstract">2024 International Conference on Recent Progresses in Science, Engineering and
+              Technology (ICRPSET), 2024, pp. 1–5.</div>
+            <div class="p-tags"><span class="p-tag">Blood Cancer</span><span class="p-tag">Hybrid DL</span><span
+                class="p-tag">Multiclass Detection</span><span class="p-tag">Medical Imaging</span></div>
             <div class="p-doi">doi: 10.1109/ICRPSET64863.2024.10955897</div>
           </div>
         </a>
@@ -3422,10 +3984,14 @@
               <div class="p-venue">IEEE ICCIT 2024 · Cox's Bazar, Bangladesh</div>
               <span class="p-award"><i data-lucide="trophy"></i> Best Paper Award</span>
             </div>
-            <div class="p-title">Automated Diagnosis of Acute Lymphoblastic Leukemia Leveraging EfficientNet and Fastai</div>
+            <div class="p-title">Automated Diagnosis of Acute Lymphoblastic Leukemia Leveraging EfficientNet and Fastai
+            </div>
             <div class="p-authors">M. M. H. Munna, <strong>I. Habib</strong>, N. A. Turzo, N. Jahan and S. Nusrat</div>
-            <div class="p-abstract">27th International Conference on Computer and Information Technology (ICCIT), 2024, pp. 233–238.</div>
-            <div class="p-tags"><span class="p-tag">Leukemia</span><span class="p-tag">EfficientNet</span><span class="p-tag">Fastai</span><span class="p-tag">Auto-Diagnosis</span><span class="p-tag">Explainable AI</span></div>
+            <div class="p-abstract">27th International Conference on Computer and Information Technology (ICCIT), 2024,
+              pp. 233–238.</div>
+            <div class="p-tags"><span class="p-tag">Leukemia</span><span class="p-tag">EfficientNet</span><span
+                class="p-tag">Fastai</span><span class="p-tag">Auto-Diagnosis</span><span class="p-tag">Explainable
+                AI</span></div>
             <div class="p-doi">doi: 10.1109/ICCIT64611.2024.11021950</div>
           </div>
         </a>
@@ -3438,11 +4004,16 @@
         <a href="https://doi.org/10.5120/ijca2025924624" target="_blank" class="paper rv d1">
           <div class="p-num">04</div>
           <div>
-            <div class="p-venue p-venue-journal" style="margin-bottom:9px;">Int. Journal of Computer Applications · 2024</div>
-            <div class="p-title">Benchmarking Hybrid ANN-LSTM and Physics-Informed Neural Networks for Forecasting Stock Market Prices</div>
-            <div class="p-authors">Biva Anika Tahsin, ABM Shahadat Hossain, Md Shafiul Alom Khan, <strong>Iqbal Habib</strong></div>
+            <div class="p-venue p-venue-journal" style="margin-bottom:9px;">Int. Journal of Computer Applications · 2024
+            </div>
+            <div class="p-title">Benchmarking Hybrid ANN-LSTM and Physics-Informed Neural Networks for Forecasting Stock
+              Market Prices</div>
+            <div class="p-authors">Biva Anika Tahsin, ABM Shahadat Hossain, Md Shafiul Alom Khan, <strong>Iqbal
+                Habib</strong></div>
             <div class="p-abstract">International Journal of Computer Applications, 2024, Vol. 975: 8887.</div>
-            <div class="p-tags"><span class="p-tag">ANN-LSTM</span><span class="p-tag">PINN</span><span class="p-tag">Stock Forecasting</span><span class="p-tag">Time Series</span><span class="p-tag">Finance</span></div>
+            <div class="p-tags"><span class="p-tag">ANN-LSTM</span><span class="p-tag">PINN</span><span
+                class="p-tag">Stock Forecasting</span><span class="p-tag">Time Series</span><span
+                class="p-tag">Finance</span></div>
             <div class="p-doi">doi: 10.5120/ijca2025924624</div>
           </div>
         </a>
@@ -3450,11 +4021,14 @@
         <a href="https://doi.org/10.5120/ijais2025452015" target="_blank" class="paper rv d2">
           <div class="p-num">05</div>
           <div>
-            <div class="p-venue p-venue-journal" style="margin-bottom:9px;">Int. Journal of Applied Information Systems · 2024</div>
+            <div class="p-venue p-venue-journal" style="margin-bottom:9px;">Int. Journal of Applied Information Systems
+              · 2024</div>
             <div class="p-title">Enhancing Financial Time Series Predictions with a Hybrid BNN-LSTM Approach</div>
-            <div class="p-authors">Biva Anika Tahsin, ABM Shahadat Hossain, Md Shafiul Alom Khan, <strong>Iqbal Habib</strong></div>
+            <div class="p-authors">Biva Anika Tahsin, ABM Shahadat Hossain, Md Shafiul Alom Khan, <strong>Iqbal
+                Habib</strong></div>
             <div class="p-abstract">International Journal of Applied Information Systems, 2024, 12(47): 1–7.</div>
-            <div class="p-tags"><span class="p-tag">BNN-LSTM</span><span class="p-tag">Financial Forecasting</span><span class="p-tag">Hybrid Model</span><span class="p-tag">Time Series</span></div>
+            <div class="p-tags"><span class="p-tag">BNN-LSTM</span><span class="p-tag">Financial Forecasting</span><span
+                class="p-tag">Hybrid Model</span><span class="p-tag">Time Series</span></div>
             <div class="p-doi">doi: 10.5120/ijais2025452015</div>
           </div>
         </a>
@@ -3468,9 +4042,13 @@
           <div class="p-num">06</div>
           <div>
             <div class="p-venue p-venue-review" style="margin-bottom:9px;">BMC Women's Health · 2025</div>
-            <div class="p-title">Multilevel Analysis of Socio-Demographic Determinants of Women's Empowerment in Household Decision-Making in Bangladesh: Evidence from BDHS 2022</div>
-            <div class="p-authors">Md. Kamrul Hasan, Akher Ali, S M Junaid, <strong>Iqbal Habib</strong>, Mohammad Alamgir Kabir</div>
-            <div class="p-tags"><span class="p-tag">Multilevel Analysis</span><span class="p-tag">Women's Empowerment</span><span class="p-tag">Bangladesh</span><span class="p-tag">BDHS 2022</span><span class="p-tag">Public Health</span></div>
+            <div class="p-title">Multilevel Analysis of Socio-Demographic Determinants of Women's Empowerment in
+              Household Decision-Making in Bangladesh: Evidence from BDHS 2022</div>
+            <div class="p-authors">Md. Kamrul Hasan, Akher Ali, S M Junaid, <strong>Iqbal Habib</strong>, Mohammad
+              Alamgir Kabir</div>
+            <div class="p-tags"><span class="p-tag">Multilevel Analysis</span><span class="p-tag">Women's
+                Empowerment</span><span class="p-tag">Bangladesh</span><span class="p-tag">BDHS 2022</span><span
+                class="p-tag">Public Health</span></div>
           </div>
         </div>
 
@@ -3478,9 +4056,13 @@
           <div class="p-num">07</div>
           <div>
             <div class="p-venue p-venue-review" style="margin-bottom:9px;">Technologies · 2026</div>
-            <div class="p-title">Evaluating the Impact of Lossy and Lossless Compression on Medical Image Classification Using Hybrid Deep Learning Models with Explainable AI</div>
-            <div class="p-authors">Mohammad Mehedi Hasan Munna, Nakib Aman, <strong>Iqbal Habib</strong>, Sabiha Nusrat, Smita Saha</div>
-            <div class="p-tags"><span class="p-tag">XAI</span><span class="p-tag">Medical Imaging</span><span class="p-tag">Image Compression</span><span class="p-tag">Hybrid DL</span><span class="p-tag">Explainability</span></div>
+            <div class="p-title">Evaluating the Impact of Lossy and Lossless Compression on Medical Image Classification
+              Using Hybrid Deep Learning Models with Explainable AI</div>
+            <div class="p-authors">Mohammad Mehedi Hasan Munna, Nakib Aman, <strong>Iqbal Habib</strong>, Sabiha Nusrat,
+              Smita Saha</div>
+            <div class="p-tags"><span class="p-tag">XAI</span><span class="p-tag">Medical Imaging</span><span
+                class="p-tag">Image Compression</span><span class="p-tag">Hybrid DL</span><span
+                class="p-tag">Explainability</span></div>
           </div>
         </div>
 
@@ -3490,7 +4072,8 @@
           <div>
             <div class="p-venue">Google Scholar Profile</div>
             <div class="p-title">View All Publications &amp; Citations →</div>
-            <div class="p-abstract">Full citation metrics, h-index, and complete publication list on Google Scholar.</div>
+            <div class="p-abstract">Full citation metrics, h-index, and complete publication list on Google Scholar.
+            </div>
           </div>
         </a>
 
@@ -3820,8 +4403,11 @@
             and Cambridge syllabus requirements.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:1.5rem;">
             <a href="#contact" class="btn-main"
-              style="background:var(--gold);box-shadow:0 4px 18px rgba(201,168,76,.3);"><span><i data-lucide="calendar"></i> Book a Session</span></a>
-            <a href="https://www.facebook.com/ihcambridgemath" target="_blank" class="btn-ghost" data-tip="Visit my teaching page on Facebook"><span><i data-lucide="facebook"></i> Facebook Page</span></a>
+              style="background:var(--gold);box-shadow:0 4px 18px rgba(201,168,76,.3);"><span><i
+                  data-lucide="calendar"></i> Book a Session</span></a>
+            <a href="https://www.facebook.com/ihcambridgemath" target="_blank" class="btn-ghost"
+              data-tip="Visit my teaching page on Facebook"><span><i data-lucide="facebook"></i> Facebook
+                Page</span></a>
           </div>
         </div>
         <div class="rv-r">
@@ -3896,16 +4482,20 @@
               tutoring</strong> — I would love to hear from you. I typically respond within 24 hours.</p>
           <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.5rem;">
             <span
-              style="font-size:.75rem;background:rgba(26,94,255,.08);color:var(--blue);border:1px solid rgba(26,94,255,.18);padding:5px 13px;border-radius:20px;font-weight:600;display:inline-flex;align-items:center;gap:5px;"><i data-lucide="graduation-cap" style="width:12px;height:12px;stroke-width:2.2;"></i>
+              style="font-size:.75rem;background:rgba(26,94,255,.08);color:var(--blue);border:1px solid rgba(26,94,255,.18);padding:5px 13px;border-radius:20px;font-weight:600;display:inline-flex;align-items:center;gap:5px;"><i
+                data-lucide="graduation-cap" style="width:12px;height:12px;stroke-width:2.2;"></i>
               PhD Collaborations</span>
             <span
-              style="font-size:.75rem;background:rgba(0,184,122,.08);color:var(--green);border:1px solid rgba(0,184,122,.2);padding:5px 13px;border-radius:20px;font-weight:600;display:inline-flex;align-items:center;gap:5px;"><i data-lucide="briefcase" style="width:12px;height:12px;stroke-width:2.2;"></i>
+              style="font-size:.75rem;background:rgba(0,184,122,.08);color:var(--green);border:1px solid rgba(0,184,122,.2);padding:5px 13px;border-radius:20px;font-weight:600;display:inline-flex;align-items:center;gap:5px;"><i
+                data-lucide="briefcase" style="width:12px;height:12px;stroke-width:2.2;"></i>
               Remote AI/ML Roles</span>
             <span
-              style="font-size:.75rem;background:rgba(201,168,76,.1);color:var(--gold);border:1px solid rgba(201,168,76,.25);padding:5px 13px;border-radius:20px;font-weight:600;display:inline-flex;align-items:center;gap:5px;"><i data-lucide="book-open" style="width:12px;height:12px;stroke-width:2.2;"></i>
+              style="font-size:.75rem;background:rgba(201,168,76,.1);color:var(--gold);border:1px solid rgba(201,168,76,.25);padding:5px 13px;border-radius:20px;font-weight:600;display:inline-flex;align-items:center;gap:5px;"><i
+                data-lucide="book-open" style="width:12px;height:12px;stroke-width:2.2;"></i>
               O/A Level Tutoring</span>
             <span
-              style="font-size:.75rem;background:rgba(255,107,43,.08);color:var(--orange);border:1px solid rgba(255,107,43,.2);padding:5px 13px;border-radius:20px;font-weight:600;display:inline-flex;align-items:center;gap:5px;"><i data-lucide="microscope" style="width:12px;height:12px;stroke-width:2.2;"></i>
+              style="font-size:.75rem;background:rgba(255,107,43,.08);color:var(--orange);border:1px solid rgba(255,107,43,.2);padding:5px 13px;border-radius:20px;font-weight:600;display:inline-flex;align-items:center;gap:5px;"><i
+                data-lucide="microscope" style="width:12px;height:12px;stroke-width:2.2;"></i>
               Research Consulting</span>
           </div>
           <div class="clinks">
@@ -4285,14 +4875,22 @@
 
   <!-- SIDE DOT NAV -->
   <nav class="side-nav" id="sideNav" aria-label="Section navigation">
-    <div class="side-dot" onclick="scrollToSec('hero')"     data-section="hero">     <span class="side-dot-label">Home</span>    <span class="side-dot-pip"></span></div>
-    <div class="side-dot" onclick="scrollToSec('about')"    data-section="about">    <span class="side-dot-label">About</span>   <span class="side-dot-pip"></span></div>
-    <div class="side-dot" onclick="scrollToSec('skills')"   data-section="skills">   <span class="side-dot-label">Skills</span>   <span class="side-dot-pip"></span></div>
-    <div class="side-dot" onclick="scrollToSec('research')" data-section="research"> <span class="side-dot-label">Research</span> <span class="side-dot-pip"></span></div>
-    <div class="side-dot" onclick="scrollToSec('projects')" data-section="projects"> <span class="side-dot-label">Projects</span> <span class="side-dot-pip"></span></div>
-    <div class="side-dot" onclick="scrollToSec('active')"   data-section="active">   <span class="side-dot-label">Active</span>   <span class="side-dot-pip"></span></div>
-    <div class="side-dot" onclick="scrollToSec('teaching')" data-section="teaching"> <span class="side-dot-label">Teaching</span> <span class="side-dot-pip"></span></div>
-    <div class="side-dot" onclick="scrollToSec('contact')"  data-section="contact">  <span class="side-dot-label">Contact</span>  <span class="side-dot-pip"></span></div>
+    <div class="side-dot" onclick="scrollToSec('hero')" data-section="hero"> <span class="side-dot-label">Home</span>
+      <span class="side-dot-pip"></span></div>
+    <div class="side-dot" onclick="scrollToSec('about')" data-section="about"> <span class="side-dot-label">About</span>
+      <span class="side-dot-pip"></span></div>
+    <div class="side-dot" onclick="scrollToSec('skills')" data-section="skills"> <span
+        class="side-dot-label">Skills</span> <span class="side-dot-pip"></span></div>
+    <div class="side-dot" onclick="scrollToSec('research')" data-section="research"> <span
+        class="side-dot-label">Research</span> <span class="side-dot-pip"></span></div>
+    <div class="side-dot" onclick="scrollToSec('projects')" data-section="projects"> <span
+        class="side-dot-label">Projects</span> <span class="side-dot-pip"></span></div>
+    <div class="side-dot" onclick="scrollToSec('active')" data-section="active"> <span
+        class="side-dot-label">Active</span> <span class="side-dot-pip"></span></div>
+    <div class="side-dot" onclick="scrollToSec('teaching')" data-section="teaching"> <span
+        class="side-dot-label">Teaching</span> <span class="side-dot-pip"></span></div>
+    <div class="side-dot" onclick="scrollToSec('contact')" data-section="contact"> <span
+        class="side-dot-label">Contact</span> <span class="side-dot-pip"></span></div>
   </nav>
 
   <!-- SECTION TOAST -->
@@ -4376,9 +4974,9 @@
 
     // ── CURSOR ──────────────────────────────────────────────────────
     // ── CURSOR ──────────────────────────────────────────────────────
-    const cur  = document.getElementById('cur');
+    const cur = document.getElementById('cur');
     const cur2 = document.getElementById('cur2');
-    const tip  = document.getElementById('tooltip');
+    const tip = document.getElementById('tooltip');
     let mx = -100, my = -100, cx = -100, cy = -100;
     let curVisible = false;
 
@@ -4402,7 +5000,7 @@
     })();
 
     // Hide cursors initially until mouse enters page
-    cur.style.opacity  = '0';
+    cur.style.opacity = '0';
     cur2.style.opacity = '0';
 
     // Hover states on interactive elements
@@ -4418,12 +5016,12 @@
       });
       el.addEventListener('mousemove', e => {
         tip.style.left = (e.clientX + 16) + 'px';
-        tip.style.top  = (e.clientY - 32) + 'px';
+        tip.style.top = (e.clientY - 32) + 'px';
       });
     });
 
     document.addEventListener('mousedown', () => document.body.classList.add('clicking'));
-    document.addEventListener('mouseup',   () => document.body.classList.remove('clicking'));
+    document.addEventListener('mouseup', () => document.body.classList.remove('clicking'));
 
     // Hide custom cursor when mouse leaves window
     document.addEventListener('mouseleave', () => { cur.style.opacity = '0'; cur2.style.opacity = '0'; });
@@ -4631,12 +5229,12 @@
 
       // Mixed node types: hubs (large, glowing) + regular nodes
       const NODE_PALETTE = [
-        { color: '26,94,255',   type: 'hub'  },
-        { color: '0,184,122',   type: 'hub'  },
-        { color: '108,71,255',  type: 'hub'  },
-        { color: '201,168,76',  type: 'hub'  },
-        { color: '26,94,255',   type: 'node' },
-        { color: '0,184,122',   type: 'node' },
+        { color: '26,94,255', type: 'hub' },
+        { color: '0,184,122', type: 'hub' },
+        { color: '108,71,255', type: 'hub' },
+        { color: '201,168,76', type: 'hub' },
+        { color: '26,94,255', type: 'node' },
+        { color: '0,184,122', type: 'node' },
       ];
       const nodes = Array.from({ length: 75 }, () => {
         const p = NODE_PALETTE[Math.floor(Math.random() * NODE_PALETTE.length)];
@@ -4658,7 +5256,7 @@
         const a = hubs[Math.floor(Math.random() * hubs.length)];
         const candidates = nodes.filter(n => {
           const dx = n.x - a.x, dy = n.y - a.y;
-          return n !== a && Math.sqrt(dx*dx+dy*dy) < 180;
+          return n !== a && Math.sqrt(dx * dx + dy * dy) < 180;
         });
         if (!candidates.length) return;
         const b = candidates[Math.floor(Math.random() * candidates.length)];
@@ -4666,7 +5264,7 @@
       }
 
       // Floating ML symbols — very faint so they never obscure text
-      const SYMS = ['∑','σ','∇','θ','μ','∂','λ','α','β','∞'];
+      const SYMS = ['∑', 'σ', '∇', 'θ', 'μ', '∂', 'λ', 'α', 'β', '∞'];
       const floatSyms = SYMS.map(s => ({
         sym: s, x: Math.random() * w, y: Math.random() * h,
         vx: (Math.random() - .5) * .08, vy: -Math.random() * .18 - .04,
@@ -4681,7 +5279,7 @@
         for (let i = 0; i < nodes.length; i++) {
           for (let j = i + 1; j < nodes.length; j++) {
             const dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y;
-            const d = Math.sqrt(dx*dx + dy*dy);
+            const d = Math.sqrt(dx * dx + dy * dy);
             const maxD = (nodes[i].type === 'hub' || nodes[j].type === 'hub') ? 160 : 100;
             if (d < maxD) {
               const alpha = (nodes[i].type === 'hub' || nodes[j].type === 'hub' ? 0.07 : 0.04) * (1 - d / maxD);
